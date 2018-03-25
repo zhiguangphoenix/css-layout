@@ -1,0 +1,238 @@
+<!-- 左float+右margin-left -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>两栏布局</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+		html, body {
+			height: 80%;
+		}
+		.wrapper {
+			height: 100%;
+
+		}
+		.common {
+			height: 100%;
+		}
+		.aside {
+			width: 200px;
+			background: green;
+			float: left;
+		}
+		.main {
+			background: red;
+			margin-left: 200px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="aside common">
+			<h2>侧栏</h2>
+		</div>
+		<div class="main common">
+			<h1>主栏</h1>
+		</div>
+	</div>
+</body>
+</html> -->
+
+
+
+
+
+<!-- 双float+calc -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+		html, body {
+			height: 80%;
+		}
+		.wrapper {
+			height: 100%;
+
+		}
+		.common {
+			height: 100%;
+			float: left;
+		}
+		.aside {
+			width: 200px;
+			background: green;
+		}
+		.main {
+			background: red;
+			width: calc(100% - 200px);
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="aside common">
+			<h2>侧栏</h2>
+		</div>
+		<div class="main common">
+			<h1>主栏</h1>
+		</div>
+	</div>
+</body>
+</html> -->
+
+
+
+
+
+ <!-- absolute+margin-left -->
+ <!-- <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title></title>
+ 	<meta charset="utf-8">
+ 	<style type="text/css">
+ 		* {
+			margin: 0px;
+			padding: 0px;
+		}
+		html, body {
+			height: 80%;
+		}
+		.wrapper {
+			height: 100%;
+			position: relative;
+		}
+		.common {
+			height: 100%;
+		}
+		.aside {
+			position: absolute;
+			left: 0px;
+			width: 200px;
+			background: green;
+		}
+		.main {
+			background: red;
+			margin-left: 200px;
+		}
+ 	</style>
+ </head>
+ <body>
+ 	<div class="wrapper">
+		<div class="aside common">
+			<h2>侧栏</h2>
+		</div>
+		<div class="main common">
+			<h1>主栏</h1>
+		</div>
+	</div>
+ </body>
+ </html> -->
+
+
+
+
+
+<!-- 双absolute -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+		html, body {
+			height: 80%;
+		}
+		.wrapper {
+			height: 100%;
+			position: relative;
+		}
+		.common {
+			height: 100%;
+		}
+		.aside {
+			background: green;
+			position: absolute;
+			left: 0px;
+			width: 200px;
+		}
+		.main {
+			background: red;
+			position: absolute;
+			left: 200px;
+			right: 0px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="aside common">
+			<h2>侧栏</h2>
+		</div>
+		<div class="main common">
+			<h1>主栏</h1>
+		</div>
+	</div>
+</body>
+</html> -->
+
+
+
+
+
+<!-- flex -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flex</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+		html, body {
+			height: 80%;
+		}
+		.wrapper {
+			height: 100%;
+			display: flex;
+		}
+		.common {
+			height: 100%;
+		}
+		.aside {
+			flex: 0 1 200px;
+			background: green;
+		}
+		.main {
+			flex-grow: 1;
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="aside common">
+			<h2>侧栏</h2>
+		</div>
+		<div class="main common">
+			<h1>主栏</h1>
+		</div>
+	</div>
+</body>
+</html>
