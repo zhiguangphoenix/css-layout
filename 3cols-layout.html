@@ -1,0 +1,369 @@
+<!-- float left + margin-left/margin-right + float right** -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		* {
+			padding: 0px;
+			margin: 0px;
+		}
+		html, body {
+			height: 100%;
+		}
+		.wrapper {
+			height: 100%;
+		}
+		.left {
+			height: 100%;
+			width: 200px;
+			float: left;
+			background: green;
+		}
+		.right {
+			height: 100%;
+			width: 200px;
+			float: right;
+			background: blue;
+		}
+		.main {
+			height: 100%;
+			margin: 0px 200px;
+			background: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="left">
+
+		</div>
+		<div class="right">
+			
+		</div>
+		<div class="main">
+			
+		</div>
+	</div>
+</body>
+</html>
+
+
+
+
+
+<!-- BFC -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    * {
+    	padding: 0px;
+    	margin: 0px;
+    }
+		.left {
+		    float: left;
+		    height: 200px;
+		    width: 100px;
+		    background-color: red;
+		}
+		.right {
+		    width: 200px;
+		    height: 200px;
+		    float: right;
+		    background-color: blue;
+		}	
+		.main {
+		    height: 200px;
+		    overflow: hidden;
+		    background-color: green;
+		}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+        	<h1>Left</h1>
+        </div>
+        <div class="right">
+        	<h1>Right</h1>
+        </div>
+        <div class="main">
+        	<h1>Content</h1>
+        </div>
+    </div>
+</body>
+</html>  -->
+
+
+<!-- ============================================ -->
+
+
+<!-- 圣杯布局 -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>3栏布局-圣杯</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		* {
+			padding: 0px;
+			margin: 0px;
+		}
+		html, body {
+			height: 100%;
+		}
+		.wrapper {
+			height: 80%;
+			padding: 0px 200px;
+		}
+		.common {
+			position: relative;
+			float: left;
+			height: 100%;
+			color: white;
+		}
+		.content {
+			background: red;
+			width: 100%;
+		}
+		.left {
+			background: blue;
+			width: 200px;
+			margin-left: -100%;
+			left: -200px;
+		}
+		.right {
+			background: green;
+			width: 200px;
+			margin-left: -200px;
+			right: -200px;
+		}
+
+		.container{
+        margin:0 auto;
+        width: 500px;
+        border: 1px #ccc solid;
+        margin-bottom: 20px;
+		}
+		.list{
+		    overflow: hidden;
+		    margin-right: -10px;
+
+		}
+		.list li{
+		    width:92px;
+		    height: 92px;
+		    background-color: #ccc;
+		    margin-bottom: 20px;
+		    float: left;
+		    margin-right: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content common">
+			<h1>Content</h1>
+		</div>
+		<div class="left common">
+			<h1>Left</h1>
+		</div>
+		<div class="right common">
+			<h1>Right</h1>
+		</div>
+	</div>
+
+	<div class="container">
+    <ul class="list">
+        <li>我是一个列表</li>
+        <li>我是一个列表</li>
+        <li>我是一个列表</li>
+        <li>我是一个列表</li>
+        <li>我是一个列表</li>
+        <li>我是一个列表</li>
+        <li>我是一个列表</li>
+        <li>我是一个列表</li>
+        <li>我是一个列表</li>
+        <li>我是一个列表</li>
+    </ul>
+</div>
+</body>
+</html> -->
+
+
+<!-- ============================================ -->
+
+
+<!-- 双飞翼布局 -->
+<!--  <!DOCTYPE html>
+<html>
+<head>
+	<title>三栏布局-双飞翼</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		* {
+			padding: 0px;
+			margin: 0px;
+		}
+		html, body {
+			height: 100%;
+		}
+		.common {
+			height: 100%;
+			float: left;
+			color: #fff;
+		}
+		.content {
+			background: red;
+			width: 100%;
+		}
+		.content-in {
+			margin: 0px 200px;
+		}
+		.left {
+			background: blue;
+			width: 200px;
+			margin-left: -100%;
+		}
+		.right {
+			background: green;
+			width: 200px;
+			margin-left: -200px;
+		}
+	</style>
+</head>
+<body>
+	<div class="content common">
+		<div class="content-in">
+			<h1>Content</h1>
+		</div>
+	</div>
+	<div class="left common">
+		<h1>Left</h1>
+	</div>
+	<div class="right common">
+		<h1>Right</h1>
+	</div>
+</body>
+</html>
+ -->
+
+
+
+
+
+ <!-- 绝对定位 -->
+ <!-- <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>三栏布局-绝对定位</title>
+ 	<meta charset="utf-8">
+ 	<style type="text/css">
+ 		* {
+			padding: 0px;
+			margin: 0px;
+		}
+		html, body {
+			height: 100%;
+		}
+		.wrapper {
+			height: 80%;
+			position: relative;
+		}
+		.common {
+			height: 100%;
+			color: white;
+		}
+		.left {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 200px;
+			background: green;
+			
+		}
+		.right {
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			width: 200px;
+			background: blue;
+		}
+		.content {
+			background: red;
+			margin: 0 200px;
+		}
+ 	</style>
+ </head>
+ <body>
+ <div class="wrapper">
+ 	<div class="content common">
+		<h1>Content</h1>
+	</div>
+	<div class="left common">
+		<h1>Left</h1>
+	</div>
+	<div class="right common">
+		<h1>Right</h1>
+	</div>
+ </div>
+ </body>
+ </html> -->
+
+
+
+
+
+<!-- flex -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>三栏布局-Flex</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		* {
+			padding: 0px;
+			margin: 0px;
+		}
+		html, body {
+			height: 100%;
+		}
+		.wrapper {
+			height: 80%;
+			display: flex;
+		}
+		.common {
+			height: 100%;
+			color: white;
+		}
+		.content {
+			flex-grow: 1;
+			background: red;
+		}
+		.left {
+			flex: 0 1 200px;
+			order: -1;
+			background: blue;
+		}
+		.right {
+			flex: 0 1 200px;
+			background: green;
+		}
+	</style>
+</head>
+<body>
+<div class="wrapper">
+	<div class="content common">
+		<h1>Content</h1>
+	</div>
+	<div class="left common">
+		<h1>Left</h1>
+	</div>
+	<div class="right common">
+		<h1>Right</h1>
+	</div>
+</div>
+</body>
+</html> -->
