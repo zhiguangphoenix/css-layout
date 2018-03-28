@@ -3,10 +3,38 @@
 <head>
 	<title>flex</title>
 	<style type="text/css">
-		
+		* {
+			padding: 0px;
+			margin: 0px;
+		}	
+		h3 {
+			margin: 30px 0;
+		}
+		.flex-box {
+			display: flex;
+			/*width: 300px;*/
+			flex-wrap: wrap;
+			border: 1px solid;
+			flex-direction: column-reverse;
+		}
+		.fixed-size {
+			flex: none;
+			width: 100px;
+			height: 100px;
+			line-height: 100px;
+			background: black;
+			color: white;
+			text-align: center;
+			border-radius: 50px;
+		}
 	</style>
 </head>
 <body>
-	
+	<h3>flex-direction: column-reverse</h3>
+	<div class="flex-box">
+		<div class="fixed-size">A</div>
+  	<div class="fixed-size">B</div>
+  	<div class="fixed-size">C</div>
+	</div>
 </body>
 </html>
