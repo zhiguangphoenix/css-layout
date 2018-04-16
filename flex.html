@@ -12,13 +12,12 @@
 		}
 		.flex-box {
 			display: flex;
-			/*width: 300px;*/
-			flex-wrap: wrap;
 			border: 1px solid;
-			flex-direction: column-reverse;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
 		}
 		.fixed-size {
-			flex: none;
+			/*flex: none;*/
 			width: 100px;
 			height: 100px;
 			line-height: 100px;
@@ -27,14 +26,24 @@
 			text-align: center;
 			border-radius: 50px;
 		}
+		.c1 {
+			order: -3;
+		}
+		.c2 {
+			order: 1;
+		}
+		.c3 {
+			order: 6;
+		}
 	</style>
 </head>
 <body>
-	<h3>flex-direction: column-reverse</h3>
+	<h3>justify-content: space-evenly;</h3>
+	<!-- <h3>以文字的底部为主对其</h3> -->
 	<div class="flex-box">
-		<div class="fixed-size">A</div>
-  	<div class="fixed-size">B</div>
-  	<div class="fixed-size">C</div>
+		<div class="fixed-size c1">A</div>
+  	<div class="fixed-size c2">B</div>
+  	<div class="fixed-size c3">C</div>
 	</div>
 </body>
 </html>
